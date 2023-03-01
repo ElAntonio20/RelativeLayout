@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:id="@+id/ivContinuara"
+        app:srcCompat="@drawable/tobe2"
+        android:scaleType="centerCrop"
+        android:layout_width="180dp"
+        android:layout_height="115dp"
+        android:text="Hello World"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:id="@+id/tvCanal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Sintonizamos la proxima semana en:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/tvLegendCanal"
+        android:text = "Canal 5"
+        android:layout_below="@+id/tvCanal"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:layout_toStartOf="@+id/ivContinuara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/redondo"
+        android:id="@+id/bnCanal"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Cambiar"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/tvCanal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/etCanal"
+        android:text="Canal 5"
+        android:layout_alignBottom="@+id/bnCanal"
+        android:layout_alignTop="@+id/bnCanal"
+        android:layout_above="@+id/tvCanal"
+        android:layout_toStartOf="@+id/bnCanal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Spinner
+        android:id="@+id/spProgramas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
